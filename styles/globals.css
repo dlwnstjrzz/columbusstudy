@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 기본 설정: 라이트 모드 */
+:root {
+  --foreground-rgb: 0, 0, 0; /* 기본 텍스트 색상: 검정 */
+  --background-rgb: 255, 255, 255; /* 배경 색상: 흰색 */
+}
+
+/* 다크 모드: dark 클래스가 있을 때 적용 */
+.dark {
+  --foreground-rgb: 255, 255, 255; /* 다크 모드 텍스트 색상: 흰색 */
+  --background-rgb: 18, 18, 18; /* 다크 모드 배경 색상: 짙은 회색 (거의 검정) */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb)); /* 단색 배경 적용 */
+}
+
+/* 추가적인 Tailwind 유틸리티 클래스나 커스텀 스타일이 필요하면 여기에 작성 */
+
+/* 추가 */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+/* 기존 스타일 아래에 추가 */
+
+/* Slick 캐러셀 커스텀 스타일 */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #2378c2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+.slick-next {
+  right: -25px;
+}
+
+.slick-dots li button:before {
+  color: #2378c2;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #2378c2;
+}
