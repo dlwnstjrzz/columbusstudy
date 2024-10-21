@@ -12,7 +12,7 @@ export default function Hero() {
       {/* 1024:570 비율 유지 (570/1024 ≈ 55.66%) */}
       <div className="absolute inset-0">
         <Image
-          src="/ship_enhanced.gif"
+          src="/heroShips_cropped.gif"
           alt="Columbus ship"
           layout="fill"
           objectFit="cover"

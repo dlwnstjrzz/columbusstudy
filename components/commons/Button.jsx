@@ -1,10 +1,13 @@
-export default function Button({ content, url = "#" }) {
-  return (
-    <a
-      href={url}
-      className="inline-block bg-[#2378C2] hover:bg-blue-600 text-white text-base py-2 px-6 rounded-lg transition duration-300"
-    >
+import Link from "next/link";
+
+export default function Button({ content, href }) {
+  const buttonClass = "bg-blue-500 text-white px-4 py-2 rounded";
+
+  return href ? (
+    <Link href={href} className={buttonClass}>
       {content}
-    </a>
+    </Link>
+  ) : (
+    <button className={buttonClass}>{content}</button>
   );
 }

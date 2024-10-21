@@ -7,7 +7,7 @@ import ExtraDescription from "@/components/main/ExtraDescription";
 import Testimonials from "@/components/main/Testimonials";
 import FreeNoteSignup from "@/components/main/FreeNoteSignup";
 import FAQ from "@/components/main/FAQ";
-import Footer from "@/components/Footer";
+import Footer from "@/app/Footer";
 
 export default function Home() {
   return (
