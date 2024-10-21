@@ -3,7 +3,6 @@ import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 
-// Slick 캐러셀의 CSS 파일을 import 합니다
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -12,11 +11,22 @@ export default function Testimonials() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: false,
+    initialSlide: 0,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -27,38 +37,54 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      content:
+      mainContent:
         "퇴근 후 무의미한 시간을 보내던 직장인들에게 정말 최고의 선택이라고 생각합니다.",
-      author: "김**님",
-      description: "1기 콜럼버스 수강생",
-    },
-    {
       content:
         "분업이 있어 스터디에 많은 시간을 투자하기 어려운 제게는 현재의 익명성과 참여 강도가 매우 잘 맞아 종종합니다. 코딩 테스트 공부에 흥미를 얻지 못도록 해주는 점이 정말 만족스럽습니다.",
       author: "김**님",
       description: "1기 콜럼버스 수강생",
     },
     {
-      content: "또 다른 후기 내용",
-      author: "박**님",
-      description: "2기 콜럼버스 수강생",
+      mainContent:
+        "퇴근 후 무의미한 시간을 보내던 직장인들에게 정말 최고의 선택이라고 생각합니다.",
+      content:
+        "분업이 있어 스터디에 많은 시간을 투자하기 어려운 제게는 현재의 익명성과 참여 강도가 매우 잘 맞아 종종합니다. 코딩 테스트 공부에 흥미를 얻지 못도록 해주는 점이 정말 만족스럽습니다.",
+      author: "김**님",
+      description: "1기 콜럼버스 수강생",
+    },
+    {
+      mainContent:
+        "퇴근 후 무의미한 시간을 보내던 직장인들에게 정말 최고의 선택이라고 생각합니다.",
+      content:
+        "분업이 있어 스터디에 많은 시간을 투자하기 어려운 제게는 현재의 익명성과 참여 강도가 매우 잘 맞아 종종합니다. 코딩 테스트 공부에 흥미를 얻지 못도록 해주는 점이 정말 만족스럽습니다.",
+      author: "김**님",
+      description: "1기 콜럼버스 수강생",
     },
   ];
 
   return (
-    <div className="mt-12 md:mt-24 bg-[rgba(249,249,249,1)] px-4 md:px-16">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">수강생 후기</h2>
+    <div className="mt-32 md:mt-32 bg-[rgba(249,249,249,1)] px-4 py-8 md:py-16 md:px-16">
+      <h2 className="text-mobile-heading md:text-desktop-heading font-bold mb-2">
+        수강생 후기
+      </h2>
       <p className="text-base md:text-xl text-[#828282] mb-8">
         콜럼버스와 항해를 마치고 난 후 이야기
       </p>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="px-4">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <p className="text-base md:text-lg mb-4">{testimonial.content}</p>
-              <div className="flex items-center">
+          <div key={index} className="px-2" style={{ maxWidth: "410px" }}>
+            <div className="bg-white rounded-xl shadow-xl p-6 flex flex-col justify-between h-full mx-2 mb-8">
+              <div>
+                <p className="text-mobile-heading md:text-desktop-paragraph2 mb-4">
+                  {testimonial.mainContent}
+                </p>
+                <p className="text-mobile-paragraph1 md:text-desktop-description mb-4">
+                  {testimonial.content}
+                </p>
+              </div>
+              <div className="flex items-center mt-auto">
                 <Image
-                  src="/testimonial_avatar.png" // 사용자 아바타 이미지 경로
+                  src="/testimonial_avatar.png"
                   alt="User Avatar"
                   width={40}
                   height={40}

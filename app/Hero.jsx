@@ -7,7 +7,7 @@ const abrilFatface = Abril_Fatface({ weight: "400", subsets: ["latin"] });
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-0 pb-[55.66%]">
+    <section className="relative w-full h-0 pb-[66.66%]">
       {" "}
       {/* 1024:570 비율 유지 (570/1024 ≈ 55.66%) */}
       <div className="absolute inset-0">

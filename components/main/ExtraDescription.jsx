@@ -3,8 +3,10 @@ import Image from "next/image";
 export default function ExtraDescription() {
   return (
     <div className="mt-12 md:mt-24">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">항해를 마치면</h2>
-      <div className="flex flex-col md:flex-row">
+      <h2 className="text-mobile-heading md:text-4xl font-bold mb-6">
+        항해를 마치면
+      </h2>
+      <div className="flex flex-row">
         <div className="flex flex-col space-y-6">
           <div
             className="bg-[#FFF9E5] rounded-2xl p-6 mb-4 relative"
@@ -31,7 +33,7 @@ export default function ExtraDescription() {
           </div>
         </div>
         <div className="w-[100px]" />
-        <div className="mt-12 md:mt-0 w-[300px] h-[300px] md:flex-shrink-0">
+        <div className="mt-12 md:mt-0 w-[156px] h-[156px] md:w-[300px] md:h-[300px] flex-shrink-0">
           <Image
             src="/parrot-unscreen.gif"
             alt="Parrot"

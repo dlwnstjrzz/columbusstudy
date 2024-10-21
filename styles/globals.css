@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
 /* 기본 설정: 라이트 모드 */
 :root {
   --foreground-rgb: 0, 0, 0; /* 기본 텍스트 색상: 검정 */

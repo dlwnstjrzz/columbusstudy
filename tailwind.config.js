@@ -7,25 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["Spoqa Han Sans Neo", "sans-serif"],
-      },
       fontSize: {
         // 데스크탑 스타일
-        "desktop-heading": ["42px", { lineHeight: "150%", fontWeight: "700" }],
+        "desktop-heading": ["36px", { lineHeight: "150%", fontWeight: "700" }],
         "desktop-paragraph1": [
-          "24px",
+          "20px",
           { lineHeight: "150%", fontWeight: "400" },
         ],
         "desktop-paragraph2": [
-          "24px",
+          "20px",
           { lineHeight: "150%", fontWeight: "700" },
         ],
+        "desktop-body": ["20px", { lineHeight: "150%", fontWeight: "400" }],
         "desktop-description": [
           "16px",
           { lineHeight: "150%", fontWeight: "400" },
         ],
-        "desktop-button": ["16px", { lineHeight: "150%", fontWeight: "500" }],
+        "desktop-button": ["24px", { lineHeight: "150%", fontWeight: "500" }],
 
         // 모바일 스타일
         "mobile-heading": ["20px", { lineHeight: "150%", fontWeight: "700" }],

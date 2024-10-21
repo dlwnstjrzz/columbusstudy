@@ -86,7 +86,9 @@ function MobileClasses() {
 function ContentSection({ title, content, className }) {
   return (
     <div className={`${className} p-4`}>
-      <h2 className="text-4xl font-semibold mb-4">{title}</h2>
+      <h2 className="text-mobile-heading md:text-desktop-heading mb-4">
+        {title}
+      </h2>
       <p className="text-[#828282] text-xl leading-8 mb-8 whitespace-pre-line">
         {content}
       </p>
