@@ -7,6 +7,7 @@ import ExtraDescription from "@/components/main/ExtraDescription";
 import Testimonials from "@/components/main/Testimonials";
 import FreeNoteSignup from "@/components/main/FreeNoteSignup";
 import FAQ from "@/components/main/FAQ";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <FreeNoteSignup />
         <FAQ />
       </Container>
+      <Footer />
     </>
   );
 }
