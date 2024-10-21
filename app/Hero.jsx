@@ -7,16 +7,16 @@ const abrilFatface = Abril_Fatface({ weight: "400", subsets: ["latin"] });
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-0 pb-[66.66%]">
-      {" "}
-      {/* 1024:570 비율 유지 (570/1024 ≈ 55.66%) */}
-      <div className="absolute inset-0">
+    <section className="relative w-full">
+      <div className="relative pb-[66.66%]">
+        {" "}
+        {/* 1024:570 비율 유지 */}
         <Image
           src="/heroShips_cropped.gif"
           alt="Columbus ship"
           layout="fill"
           objectFit="cover"
-          className="w-full h-full"
+          className="absolute top-0 left-0 w-full h-full"
         />
       </div>
       <div className="absolute inset-0 flex items-center">
