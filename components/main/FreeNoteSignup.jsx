@@ -20,7 +20,7 @@ export default function FreeNoteSignup() {
           alt="꽃 이미지"
           width={100}
           height={40}
-          className="rounded-full mb-4 md:mb-0 md:mr-6"
+          className="rounded-full mb-4 mr-2 md:mb-0 md:mr-6"
         />
         <div className="text-left w-full">
           <h2 className="text-xl md:text-4xl font-bold mb-4">
