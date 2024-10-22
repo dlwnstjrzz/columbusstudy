@@ -81,13 +81,13 @@ export default function ExtraDescription() {
           </div>
         </div>
         <div className="w-[100px]" />
-        <div className="mt-12 md:mt-0 w-[156px] h-[156px] md:w-[300px] md:h-[300px] flex-shrink-0">
+        <div className="mt-12 md:mt-0 w-[156px] md:w-[300px] flex-shrink-0">
           <Image
-            src="/parrot-unscreen.gif"
+            src="/parrot_final.gif"
             alt="Parrot"
             width={300}
             height={300}
-            className="transform scale-x-[-1]"
+            className="w-full h-full object-cover transform scale-x-[-1]"
           />
         </div>
       </div>
