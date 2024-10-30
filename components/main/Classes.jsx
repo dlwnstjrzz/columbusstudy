@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import Description from "./Description";
-import Image from "next/image";
 import Button from "../commons/Button";
 
 export default function Classes() {
@@ -43,10 +42,10 @@ function DesktopClasses() {
           className="w-1/2 flex flex-col justify-between"
           href="/regular-course"
         />
-        <VideoSection videoUrl="manGesture.mp4" className="w-1/2" />
+        <VideoSection videoUrl="manGesture_final.mp4" className="w-1/2" />
       </div>
       <div className="mt-16 flex items-stretch">
-        <VideoSection videoUrl="shipOcean.mp4" className="w-1/2" />
+        <VideoSection videoUrl="shipOcean_final.mp4" className="w-1/2" />
         <div className="w-[50px]"></div>
         <ContentSection
           title="유형반"
