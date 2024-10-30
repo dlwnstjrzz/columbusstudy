@@ -37,8 +37,11 @@ export default function LevelCourses() {
     {
       step: "01",
       level: "상반",
-      recommendation: "추천: 백준 🏅 브론즈",
+      recommendation: "추천: 백준 🥉브론즈",
       description: "비전공자 혹은 자료구조/알고리즘을 공부한 적이 없어요.",
+      subDescription: "각 알고리즘을 익히기 위한",
+      boldText: " 필수 자료구조와 빈출 유형 중 가장 중요한 그리디",
+      restText: "로 구성했습니다.",
       curriculum: [
         "1주차 - 문자열 & 기초수학",
         "2주차 - 스택 & 큐 & 연결리스트",
@@ -49,25 +52,33 @@ export default function LevelCourses() {
     {
       step: "02",
       level: "중반",
-      recommendation: "추천: 백준 🥈 실버",
-      description: "자료구조는 알지만 알고리즘은 자신이 없어요.",
+      recommendation: "추천: 백준 🥈실버4 - 🥈실버2",
+      description:
+        "자료구조/알고리즘을 학습해 봤고, 기초 문제는 풀 수 있습니다.",
+      subDescription: "",
+      boldText: "완전탐색, bfs, dfs, dp",
+      restText: " 등 핵심 유형들로 구성되어 있습니다.",
       curriculum: [
-        "1주차 - DFS & BFS",
-        "2주차 - 이진탐색 & 분할정복",
-        "3주차 - DP",
-        "4주차 - 최단경로",
+        "1주차 - 완전탐색 & 재귀",
+        "2주차 - bfs/dfs & 트리 & 그래프",
+        "3주차 - 2주차와 동일",
+        "4주차 - 기초 dp",
       ],
     },
     {
       step: "03",
       level: "하반",
-      recommendation: "추천: 백준 🥇 골드",
-      description: "기본적인 알고리즘은 알지만 더 높은 수준으로 가고 싶어요.",
+      recommendation: "추천: 백준 🥈실버1 - 🥇골드3 이상",
+      description:
+        "자료구조/알고리즘의 이해도가 있고, 중급 문제를 풀 수 있습니다.",
+      subDescription: "",
+      boldText: "다익스트라, 백트래킹",
+      restText:
+        " 등 어려운 유형과 상,중반에서의 다양한 유형들을 총합한 모의고사 별도 제공합니다.",
       curriculum: [
         "1주차 - 트리 & 세그먼트 트리",
-        "2주차 - 위상정렬 & MST",
-        "3주차 - 고급 DP",
-        "4주차 - 문자열 알고리즘",
+        "2주차 - 시뮬레이션",
+        "3, 4주차 - 실전기출",
       ],
     },
   ];

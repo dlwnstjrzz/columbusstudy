@@ -4,6 +4,9 @@ export default function CourseCard({
   recommendation,
   description,
   curriculum,
+  subDescription,
+  boldText,
+  restText,
 }) {
   return (
     <div className="px-4 mb-6">
@@ -17,8 +20,13 @@ export default function CourseCard({
         <div className="text-[#0F81E5] font-bold mb-4">Step {step}</div>
         <h3 className="text-xl text-black font-bold mb-4">{level}</h3>
         <p className="font-bold">{recommendation}</p>
-        <p className="mb-6">{description}</p>
-        <div className="space-y-2">
+        <p className="mb-4">{description}</p>
+        <div>
+          {subDescription}
+          <strong>{boldText}</strong>
+          {restText}
+        </div>
+        <div className="mt-4">
           {curriculum.map((item, index) => (
             <div key={index} className="text-sm text-gray-700">
               • {item}
