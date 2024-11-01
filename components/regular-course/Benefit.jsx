@@ -1,15 +1,5 @@
 import React from "react";
-
-const BenefitItem = ({ number, title, description, icon }) => (
-  <div className="bg-white text-sm rounded-[0.625rem] p-6 shadow-[0_0_15px_rgba(0,0,0,0.15)]">
-    <div className="text-[#F4B700] font-bold mb-3">0{number}</div>
-    <div className="flex items-start gap-3 mb-4">
-      <span className={`${icon.color}`}>{icon.emoji}</span>
-      <h3 className="font-bold">{title}</h3>
-    </div>
-    <div className="text-[#828282]">{description}</div>
-  </div>
-);
+import BenefitItem from "./BenefitItem";
 
 export default function Benefit() {
   const benefits = [
@@ -62,7 +52,7 @@ export default function Benefit() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-16 bg-[#FFFDF3]">
       <div className="text-center mb-12">
-        <div className="inline-block bg-[#F4B700] text-white rounded px-4 py-1 text-sm font-bold mb-4">
+        <div className="inline-block bg-[#F4B700] text-white rounded px-5 py-2 text-sm font-bold mb-4">
           Benefit
         </div>
         <h2 className="text-xl font-bold">콜럼버스와 스터디를 끝내면?</h2>
@@ -77,8 +67,8 @@ export default function Benefit() {
             description={
               benefit.boldText ? (
                 <div>
-                  {benefit.description}
-                  <div className="font-bold">{benefit.boldText}</div>
+                  {benefit.description}{" "}
+                  <span className="font-bold">{benefit.boldText}</span>{" "}
                   {benefit.restText}
                 </div>
               ) : (
